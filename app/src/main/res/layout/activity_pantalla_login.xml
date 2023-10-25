@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A3A58942"
+    android:background="#FFFFFF"
     android:theme="@style/Base.Theme.ProyectoEcoRecicla"
     tools:context=".Pantalla_login">
 
@@ -14,10 +14,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:text="@string/app_name"
-        android:textColor="#FFEA00"
+        android:textColor="#76FF03"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/tituloiniciosesion"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="@+id/tituloiniciosesion"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,8 +27,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Iniciar sesion"
-        android:textColor="#FFEA00"
-        android:textSize="16sp"
+        android:textColor="#76FF03"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="0.494"
@@ -53,9 +54,10 @@
             android:ems="10"
             android:hint="Usuario"
             android:inputType="text"
+            android:minHeight="48dp"
             android:padding="10dp"
-
-            android:textColor="#FFEA00" />
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -64,19 +66,51 @@
             android:ems="10"
             android:hint="password"
             android:inputType="textPassword"
-            android:textColor="#FFC400" />
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/Loginbt"
             android:layout_width="266dp"
             android:layout_height="66dp"
-            android:background="#875555"
-            android:drawableTint="#76FF03"
             android:text="Entrar"
-            android:textColorHighlight="#FBC02D"
-            android:textColorLink="#FBC02D"
+            android:textSize="20sp"
             android:visibility="visible" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/labelregis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:text="Registrarme"
+        android:textColor="#2979FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="222dp"
+        android:layout_height="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Tituloapp"
+        app:srcCompat="@drawable/reciclaje" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Registroc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
