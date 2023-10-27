@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pantalla1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -74,6 +75,9 @@
             android:layout_width="266dp"
             android:layout_height="66dp"
             android:text="Entrar"
+            android:textEditSideNoPasteWindowLayout="?android:attr/textEditNoPasteWindowLayout"
+            android:textEditSidePasteWindowLayout="?android:attr/textEditPasteWindowLayout"
+            android:textEditSuggestionItemLayout="?android:attr/textEditPasteWindowLayout"
             android:textSize="20sp"
             android:visibility="visible" />
 
@@ -105,12 +109,156 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/Registroc"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:foregroundGravity="center"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="409dp"
+            android:layout_height="665dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.757">
+
+            <ImageView
+                android:id="@+id/imagenregis"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                tools:srcCompat="@drawable/images" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Registro de Usuario"
+                android:textSize="24sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/fila1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearnombreregis"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="11dp"
+                        android:weightSum="2"
+                        app:layout_constraintStart_toStartOf="@+id/linearnombre">
+
+
+                        <TextView
+                            android:id="@+id/textnombreregis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Nombre" />
+
+                        <EditText
+                            android:id="@+id/editTextnombreregis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Digite su nombre"
+                            android:inputType="text" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearapellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="11dp"
+                        android:weightSum="2"
+                        app:layout_constraintStart_toStartOf="@+id/linearnombre">
+
+
+
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Apellido" />
+
+                        <EditText
+                            android:id="@+id/editTextText3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Digite su apellido"
+                            android:inputType="text" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <LinearLayout
+                        android:id="@+id/linearfechana"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="11dp"
+                        android:weightSum="2"
+                        app:layout_constraintStart_toStartOf="@+id/linearnombre">
+
+
+                        <TextView
+                            android:id="@+id/textViewfechanac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Nº de documento:" />
+
+                        <EditText
+                            android:id="@+id/editTextfechanac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Digite su nùmero de Documento"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

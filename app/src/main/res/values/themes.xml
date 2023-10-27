@@ -3,7 +3,13 @@
     <style name="Base.Theme.ProyectoEcoRecicla" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@android:color/holo_green_dark</item>
     </style>
 
-    <style name="Theme.ProyectoEcoRecicla" parent="Base.Theme.ProyectoEcoRecicla" />
+    <style name="Theme.ProyectoEcoRecicla" parent="Base.Theme.ProyectoEcoRecicla" >
+    <item name="colorPrimary">@android:color/holo_green_dark</item>
+        <item name="buttonStyle" parent="Base.Theme.ProyectoEcoRecicla">
+
+        </item>
+    </style>
 </resources>

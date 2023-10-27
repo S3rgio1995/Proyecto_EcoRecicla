@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,17 +12,42 @@
         android:id="@+id/tituloapp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
         android:text="@string/app_name"
         android:textColor="#76FF03"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId" />
 
-        />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="222dp"
+        android:layout_height="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/tituloapp"
+        app:layout_constraintTop_toBottomOf="@+id/tituloapp"
+        app:srcCompat="@drawable/reciclaje" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginTop="88dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="363dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
