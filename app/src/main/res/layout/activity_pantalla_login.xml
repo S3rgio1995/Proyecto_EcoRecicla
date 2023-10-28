@@ -112,7 +112,7 @@
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:foregroundGravity="center"
-        android:visibility="visible"
+        android:visibility="gone"
         app:cardBackgroundColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,7 +146,7 @@
                 android:textSize="24sp" />
 
             <TableLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
                 <TableRow
@@ -160,7 +160,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal"
-                        android:padding="11dp"
+                        android:padding="1dp"
                         android:weightSum="2"
                         app:layout_constraintStart_toStartOf="@+id/linearnombre">
 
@@ -193,11 +193,9 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal"
-                        android:padding="11dp"
+                        android:padding="1dp"
                         android:weightSum="2"
                         app:layout_constraintStart_toStartOf="@+id/linearnombre">
-
-
 
 
                         <TextView
@@ -220,27 +218,27 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent">
+
                     <LinearLayout
-                        android:id="@+id/linearfechana"
+                        android:id="@+id/lineardocu"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal"
-                        android:padding="11dp"
+                        android:padding="1dp"
                         android:weightSum="2"
                         app:layout_constraintStart_toStartOf="@+id/linearnombre">
 
 
                         <TextView
-                            android:id="@+id/textViewfechanac"
+                            android:id="@+id/textViewdocu"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
-                            android:text="Nº de documento:" />
+                            android:text="Nº de documento:   " />
 
                         <EditText
-                            android:id="@+id/editTextfechanac"
+                            android:id="@+id/editTextdocu"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -253,7 +251,178 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearemail1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2"
+                        app:layout_constraintStart_toStartOf="@+id/linearnombre">
+
+
+                        <TextView
+                            android:id="@+id/textViewemail1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="E-mail:" />
+
+                        <EditText
+                            android:id="@+id/editTextemail1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Digite su email"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearemail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2"
+                        app:layout_constraintStart_toStartOf="@+id/linearnombre">
+
+
+                        <TextView
+                            android:id="@+id/textViewemail2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Confirme su E-mail" />
+
+                        <EditText
+                            android:id="@+id/editTextemail2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Confirme su E-mail"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearpassword1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2"
+                        app:layout_constraintStart_toStartOf="@+id/linearnombre">
+
+
+                        <TextView
+                            android:id="@+id/textViewpassword1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Contraseña:" />
+
+                        <EditText
+                            android:id="@+id/editpassword1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Digite Contraseña"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearpassword2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2"
+                        app:layout_constraintStart_toStartOf="@+id/linearnombre">
+
+
+                        <TextView
+                            android:id="@+id/textViewpassword2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Confirme contraseña" />
+
+                        <EditText
+                            android:id="@+id/editTextpassword2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Confirme su contraseña"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearbtnregistrar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2"
+                        app:layout_constraintStart_toStartOf="@+id/linearnombre">
+
+                        <Button
+                            android:id="@+id/registrerbt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Registrar"
+                            android:textEditSideNoPasteWindowLayout="?android:attr/textEditNoPasteWindowLayout"
+                            android:textEditSidePasteWindowLayout="?android:attr/textEditPasteWindowLayout"
+                            android:textEditSuggestionItemLayout="?android:attr/textEditPasteWindowLayout"
+                            android:textSize="20sp"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/cancelarregistrerbt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cancelar"
+                            android:textEditSideNoPasteWindowLayout="?android:attr/textEditNoPasteWindowLayout"
+                            android:textEditSidePasteWindowLayout="?android:attr/textEditPasteWindowLayout"
+                            android:textEditSuggestionItemLayout="?android:attr/textEditPasteWindowLayout"
+                            android:textSize="20sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </TableRow>
             </TableLayout>
 
 

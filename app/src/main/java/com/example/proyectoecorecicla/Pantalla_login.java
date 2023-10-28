@@ -30,9 +30,15 @@ protected Boolean iniciarsesion(String usuario,String Password){
         TextView registro = findViewById(R.id.labelregis);
         CardView registarg = findViewById(R.id.Registroc);
         Button Iniciars = findViewById(R.id.Loginbt);
-
+        Button cancel = findViewById(R.id.cancelarregistrerbt);
         Intent pasarpag= new Intent(getApplicationContext(),MainActivity.class);
+cancel.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+            registarg.setVisibility(View.GONE);
 
+    }
+});
         Iniciars.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
