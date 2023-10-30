@@ -129,13 +129,13 @@ Tomado de Wikipedia."
                 tools:ignore="Deprecated" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/Registrarresic"
                 android:layout_width="391dp"
                 android:layout_height="54dp"
                 android:text="Registrar" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/Btnatrascatego"
                 android:layout_width="394dp"
                 android:layout_height="50dp"
                 android:text="Atras" />
