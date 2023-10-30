@@ -22,7 +22,7 @@ protected void iniciarsesion (String usuari, String Password){
     String correo, passwor;
 correo = usu.getEmail();
 passwor = usu.getPassword();*/
-Intent pasarpa= new Intent(getApplicationContext(), pantallacategorias.class);
+Intent pasarpa= new Intent(getApplicationContext(), Pantallaprincipal.class);
     Toast.makeText(getApplicationContext(),"Iniciar sesion",Toast.LENGTH_LONG).show();
 if (usuari.equals("qwer")) {
     if (Password.equals("123")){

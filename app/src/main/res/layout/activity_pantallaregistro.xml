@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pantallaregistro">
+
+    <ImageView
+        android:id="@+id/imageViewR"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/images" />
+
+    <TextView
+        android:id="@+id/textViewRIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mes:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextTextRIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enero, Febrero, ..."
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewRI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextTextRI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Papel,Plastico, ..."
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewIC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cantidad:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cantidad en Kilos"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Pesos Colombianos"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonRI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+</LinearLayout>
