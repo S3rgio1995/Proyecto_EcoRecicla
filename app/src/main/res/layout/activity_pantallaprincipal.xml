@@ -14,7 +14,7 @@
         app:srcCompat="@drawable/reciclaje" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/pantcategobt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#00E676"
@@ -23,7 +23,7 @@
         app:cornerRadius="0dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/pantrecomenbt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#009688"
@@ -32,7 +32,7 @@
         app:cornerRadius="0dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnestadisp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#1DE9B6"
@@ -41,7 +41,7 @@
         app:cornerRadius="0dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Registelembt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#00E676"
