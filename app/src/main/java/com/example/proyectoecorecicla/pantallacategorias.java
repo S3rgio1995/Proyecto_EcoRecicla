@@ -12,11 +12,12 @@ import android.widget.TextView;
 import com.google.android.material.tabs.TabItem;
 
 public class pantallacategorias extends AppCompatActivity {
-    Intent pasarpa= new Intent(getApplicationContext(),PantallaEstadisticas.class);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent pasarpa2= new Intent(getApplicationContext(),PantallaEstadisticas.class);
         setContentView(R.layout.activity_pantallacategorias);
         Button boton1 = findViewById(R.id.Registrarresic);
         Button boton2 = findViewById(R.id.Btnatrascatego);
@@ -24,7 +25,8 @@ public class pantallacategorias extends AppCompatActivity {
 boton1.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        startActivity(pasarpa);
+
+        startActivity(pasarpa2);
     }
 });
 
