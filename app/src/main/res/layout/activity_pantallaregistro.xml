@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enero, Febrero, ..."
+        android:hint="Enero, Febrero ..."
         android:inputType="text"
         android:textSize="20sp" />
 
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Papel,Plastico, ..."
+        android:hint="Papel, plástico ..."
         android:inputType="text"
         android:textSize="20sp" />
 
@@ -57,7 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Cantidad en Kilos"
+        android:hint="Cantidad en kilos"
         android:inputType="numberDecimal"
         android:textSize="20sp" />
 
@@ -81,7 +81,7 @@
         android:id="@+id/buttonRI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar"
+        android:text="Enviar"
         android:textSize="20sp"
         app:cornerRadius="0dp" />
 </LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
-    tools:context=".pantallacategorias">
+    tools:context=".Pantallacategorias">
 
 
     <LinearLayout
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="Categorias de reciclaje"
+            android:text="Categorías de reciclaje"
             android:textColor="#76FF03"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -120,7 +120,7 @@
                 android:enabled="false"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
-                android:text="El vidrio es un material totalmente reciclable y no hay límite en la cantidad de veces que puede ser reprocesado. Al reciclarlo no se pierden las propiedades y se ahorra una cantidad de energía de alrededor del 30 % con respecto al vidrio nuevo. Este reciclaje permite reducir la cantidad de residuos que luego se llevan al vertedero, lo que supone un ahorro tanto de materias primas como de energía respecto a la fabricación de vidrio a partir de materias primas nuevas.
+                android:text="El vidrio es un material totalmente reciclable y no hay límite en la cantidad de veces que puede ser reprocesado. Al reciclarlo no se pierden las propiedades y se ahorra una cantidad de energía de alrededor del 30% con respecto al vidrio nuevo. Este reciclaje permite reducir la cantidad de residuos que luego se llevan al vertedero, lo que supone un ahorro tanto de materias primas como de energía respecto a la fabricación de vidrio a partir de materias primas nuevas.
 Tomado de Wikipedia."
                 tools:ignore="Deprecated" />
 

@@ -71,7 +71,7 @@ if (usuari.equals("qwer")) {
                 }
 
                 int docu = Integer.parseInt(editTextd.getText()+"");
-                usuario usu = new usuario(edtinom.getText()+"",edtapellll.getText()+"",docu,editemail1.getText()+"",editcontra1.getText()+"");
+                Usuario usu = new Usuario(edtinom.getText()+"",edtapellll.getText()+"",docu,editemail1.getText()+"",editcontra1.getText()+"");
                 Toast.makeText(getApplicationContext(),"Usuario "+usu.getNombre()+" "+"Registrado",Toast.LENGTH_LONG).show();
                 edtinom.setText(null);
                 edtapellll.setText(null);

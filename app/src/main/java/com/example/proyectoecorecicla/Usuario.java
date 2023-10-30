@@ -1,15 +1,13 @@
 package com.example.proyectoecorecicla;
 
-import android.widget.Toast;
-
-public class usuario {
+public class Usuario {
 String nombre;
 String apellido;
 int Documento;
 String email;
 String Password;
 
-    public usuario(String nombre, String apellido, int documento, String email, String password) {
+    public Usuario(String nombre, String apellido, int documento, String email, String password) {
         this.nombre = nombre;
         this.apellido = apellido;
         Documento = documento;

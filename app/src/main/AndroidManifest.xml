@@ -25,7 +25,7 @@
             android:name=".PantallaEstadisticas"
             android:exported="false" />
         <activity
-            android:name=".pantallacategorias"
+            android:name=".Pantallacategorias"
             android:exported="false" />
         <activity
             android:name=".Pantalla_login"
