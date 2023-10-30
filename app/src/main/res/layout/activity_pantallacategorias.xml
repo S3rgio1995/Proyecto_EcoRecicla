@@ -110,11 +110,7 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="90"
-                tools:src="@drawable/_0190122094710_vidrio_x2_jpg" />
+
 
             <EditText
                 android:id="@+id/editTextTextMultiLine"
