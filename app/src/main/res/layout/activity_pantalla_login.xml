@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Tituloapp">
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/editTextusuaini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -61,7 +61,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/editTextTextPasswordini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -199,14 +199,14 @@
 
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/textapellireg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Apellido" />
 
                         <EditText
-                            android:id="@+id/editTextText3"
+                            android:id="@+id/editapelli"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -278,7 +278,7 @@
                             android:layout_weight="1"
                             android:ems="10"
                             android:hint="Digite su email"
-                            android:inputType="number" />
+                            android:inputType="textEmailAddress" />
                     </LinearLayout>
 
                 </TableRow>
@@ -311,7 +311,7 @@
                             android:layout_weight="1"
                             android:ems="10"
                             android:hint="Confirme su E-mail"
-                            android:inputType="number" />
+                            android:inputType="textEmailAddress" />
                     </LinearLayout>
 
                 </TableRow>
@@ -345,7 +345,7 @@
                             android:layout_weight="1"
                             android:ems="10"
                             android:hint="Digite Contraseña"
-                            android:inputType="number" />
+                            android:inputType="textPassword" />
                     </LinearLayout>
 
                 </TableRow>
@@ -379,7 +379,7 @@
                             android:layout_weight="1"
                             android:ems="10"
                             android:hint="Confirme su contraseña"
-                            android:inputType="number" />
+                            android:inputType="textPassword" />
                     </LinearLayout>
 
                 </TableRow>

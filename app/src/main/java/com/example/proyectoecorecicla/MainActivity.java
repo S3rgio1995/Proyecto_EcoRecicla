@@ -1,7 +1,11 @@
 package com.example.proyectoecorecicla;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.example.proyectoecorecicla.R.id.Registroc;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button iniciarse =findViewById(R.id.inibt);
 
+
         Intent pasariniciarsesi= new Intent(getApplicationContext(), Pantalla_login.class);
+
         iniciarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,5 +1,7 @@
 package com.example.proyectoecorecicla;
 
+import android.widget.Toast;
+
 public class usuario {
 String nombre;
 String apellido;
@@ -12,8 +14,9 @@ String Password;
         this.apellido = apellido;
         Documento = documento;
         this.email = email;
-        Password = password;
+        this.Password = password;
     }
+
 
     public String getNombre() {
         return nombre;
