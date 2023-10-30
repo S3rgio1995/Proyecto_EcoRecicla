@@ -42,14 +42,14 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
-        android:layout_width="384dp"
-        android:layout_height="66dp"
+        android:layout_width="387dp"
+        android:layout_height="48dp"
 
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearcabezacatego"
+        app:layout_constraintVertical_bias="0.2"
         app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium">
 
         <com.google.android.material.tabs.TabItem
@@ -105,13 +105,16 @@
                 android:id="@+id/Categoriatitutext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:gravity="center_horizontal"
+                android:text="Vidrios "
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:src="@tools:sample/avatars" />
+                android:layout_height="90"
+                tools:src="@drawable/_0190122094710_vidrio_x2_jpg" />
 
             <EditText
                 android:id="@+id/editTextTextMultiLine"
@@ -121,19 +124,20 @@
                 android:enabled="false"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
-                android:text=""
+                android:text="El vidrio es un material totalmente reciclable y no hay límite en la cantidad de veces que puede ser reprocesado. Al reciclarlo no se pierden las propiedades y se ahorra una cantidad de energía de alrededor del 30 % con respecto al vidrio nuevo. Este reciclaje permite reducir la cantidad de residuos que luego se llevan al vertedero, lo que supone un ahorro tanto de materias primas como de energía respecto a la fabricación de vidrio a partir de materias primas nuevas.
+Tomado de Wikipedia."
                 tools:ignore="Deprecated" />
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="76dp"
+                android:layout_width="391dp"
+                android:layout_height="54dp"
                 android:text="Registrar" />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="76dp"
+                android:layout_width="394dp"
+                android:layout_height="50dp"
                 android:text="Atras" />
 
             <androidx.viewpager2.widget.ViewPager2
