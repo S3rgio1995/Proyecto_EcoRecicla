@@ -1,13 +1,15 @@
-package com.example.proyectoecorecicla;
+package com.example.proyectoecorecicla.models;
 
 public class Usuario {
-String nombre;
+private String idusuario;
+    String nombre;
 String apellido;
 int Documento;
 String email;
 String Password;
 
-    public Usuario(String nombre, String apellido, int documento, String email, String password) {
+    public Usuario(String idusuario, String nombre, String apellido, int documento, String email, String password) {
+        this.idusuario = idusuario;
         this.nombre = nombre;
         this.apellido = apellido;
         Documento = documento;
@@ -15,7 +17,13 @@ String Password;
         this.Password = password;
     }
 
+    public String getIdusuario() {
+        return idusuario;
+    }
 
+    public void setIdusuario(String nombre) {
+        this.idusuario = idusuario;
+    }
     public String getNombre() {
         return nombre;
     }
