@@ -16,14 +16,14 @@
         android:orientation="vertical"
         android:paddingVertical="10dp"
         android:weightSum="3"
-        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+        app:layout_constraintBottom_toTopOf="@+id/tabcategorias"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/imageButton1"
             android:layout_width="138dp"
             android:layout_height="69dp"
             android:layout_weight="0"
@@ -41,7 +41,7 @@
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+        android:id="@+id/tabcategorias"
         android:layout_width="387dp"
         android:layout_height="48dp"
 
@@ -62,23 +62,25 @@
             tools:layout_editor_absoluteY="38dp" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/Tabcarton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
 
+            android:layout_height="wrap_content"
             android:text="Papeles y carton"
             tools:layout_editor_absoluteX="101dp"
             tools:layout_editor_absoluteY="67dp" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabplasticos"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
 
+            android:layout_height="wrap_content"
             android:text="Plasticos"
             tools:layout_editor_absoluteX="207dp"
             tools:layout_editor_absoluteY="165dp" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItem"
+            android:id="@+id/tabaluminio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -94,7 +96,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+        app:layout_constraintTop_toBottomOf="@+id/tabcategorias">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -114,10 +116,14 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-
+            <ImageView
+                android:id="@+id/imagencat"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/imgvidrio" />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine"
+                android:id="@+id/Contenidocatego"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -127,19 +133,25 @@
                 android:text="El vidrio es un material totalmente reciclable y no hay límite en la cantidad de veces que puede ser reprocesado. Al reciclarlo no se pierden las propiedades y se ahorra una cantidad de energía de alrededor del 30% con respecto al vidrio nuevo. Este reciclaje permite reducir la cantidad de residuos que luego se llevan al vertedero, lo que supone un ahorro tanto de materias primas como de energía respecto a la fabricación de vidrio a partir de materias primas nuevas.
 Tomado de Wikipedia."
                 tools:ignore="Deprecated" />
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
             <Button
                 android:id="@+id/Registrarresic"
-                android:layout_width="391dp"
-                android:layout_height="54dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
                 android:text="Registrar" />
 
             <Button
                 android:id="@+id/Btnatrascatego"
-                android:layout_width="394dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
                 android:text="Atras" />
-
+        </LinearLayout>
             <androidx.viewpager2.widget.ViewPager2
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />

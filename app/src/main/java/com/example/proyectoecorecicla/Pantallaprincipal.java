@@ -20,8 +20,8 @@ public class Pantallaprincipal extends AppCompatActivity {
         pantcatego.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pasarpa1= new Intent(getApplicationContext(), Pantallacategorias.class);
-                startActivity(pasarpa1);
+                Intent pasar= new Intent(getApplicationContext(), Pantallacategorias.class);
+                startActivity(pasar);
             }
         });
         pantrecomen = findViewById(R.id.pantrecomenbt);

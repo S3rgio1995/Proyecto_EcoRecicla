@@ -55,21 +55,20 @@ public ArrayList<Usuario> lisUsers(File fileUser){
 correo = usu.getEmail();
 passwor = usu.getPassword();*/
         File fileReader = new File(getFilesDir(),"usuari.txt");
-        ArrayList<Usuario> lisUser= lisUser = lisUsers(fileReader);
+        ArrayList<Usuario> lisUser = lisUsers(fileReader);
         Intent pasarpa = new Intent(getApplicationContext(), Pantallaprincipal.class);
-        Toast.makeText(getApplicationContext(), "Iniciar sesion", Toast.LENGTH_LONG).show();
-        for (Usuario i:lisUser)
-        if (usuari.equals(i.getEmail())) {
-            if (Password.equals(i.getPassword())) {
-                Toast.makeText(getApplicationContext(), "Bienvenido ", Toast.LENGTH_LONG).show();
-                startActivity(pasarpa);
+        for (Usuario i:lisUser) {
+            if (usuari.equalsIgnoreCase(i.getEmail())) {
+                if (Password.equals(i.getPassword())) {
+                    Toast.makeText(getApplicationContext(), "Bienvenido ", Toast.LENGTH_LONG).show();
+                    startActivity(pasarpa);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Usuario " + " contraseña incorrecta", Toast.LENGTH_LONG).show();
+                }
             } else {
-                Toast.makeText(getApplicationContext(), "Usuario " + " contraseña incorrecta", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Usuario y contraseña no registrado", Toast.LENGTH_LONG).show();
             }
-        } else {
-            Toast.makeText(getApplicationContext(), "Usuario y contraseña no registrado", Toast.LENGTH_LONG).show();
         }
-
 
     }
 

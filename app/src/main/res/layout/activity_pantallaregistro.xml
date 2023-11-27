@@ -36,14 +36,21 @@
         android:text="Item:"
         android:textSize="20sp" />
 
-    <EditText
+    <Spinner
+        android:id="@+id/spinnermaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <!--EditText
         android:id="@+id/editTextTextRI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Papel, plástico ..."
         android:inputType="text"
-        android:textSize="20sp" />
+        android:textSize="20sp" -->
 
     <TextView
         android:id="@+id/textViewIC"
