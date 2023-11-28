@@ -95,16 +95,17 @@ public class Pantallacategorias extends AppCompatActivity {
 boton2.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        startActivity(pasarpa3);
+
         pasarpa3.putExtra("idusuario",id);
+        startActivity(pasarpa3);
     }
 });
 boton1.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-
-        startActivity(pasarpa2);
         pasarpa2.putExtra("idusuario",id);
+        startActivity(pasarpa2);
+
     }
 });
 
