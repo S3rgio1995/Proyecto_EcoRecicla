@@ -24,7 +24,8 @@ public class Pantallacategorias extends AppCompatActivity {
         setContentView(R.layout.activity_pantallacategorias);
         Intent pasarpa2= new Intent(getApplicationContext(),Pantallaregistro.class);
         Intent pasarpa3= new Intent(getApplicationContext(), Pantallaprincipal.class);
-
+        Intent receive= getIntent();
+        String id= receive.getStringExtra("idusuario");
         Button boton1 = findViewById(R.id.Registrarresic);
         Button boton2 = findViewById(R.id.Btnatrascatego);
         TabLayout tabcate = findViewById(R.id.tabcategorias);
@@ -95,6 +96,7 @@ boton2.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
         startActivity(pasarpa3);
+        pasarpa3.putExtra("idusuario",id);
     }
 });
 boton1.setOnClickListener(new View.OnClickListener() {
@@ -102,6 +104,7 @@ boton1.setOnClickListener(new View.OnClickListener() {
     public void onClick(View view) {
 
         startActivity(pasarpa2);
+        pasarpa2.putExtra("idusuario",id);
     }
 });
 

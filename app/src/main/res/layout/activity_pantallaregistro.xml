@@ -20,13 +20,11 @@
         android:text="Mes:"
         android:textSize="20sp" />
 
-    <EditText
+    <Spinner
         android:id="@+id/editTextTextRIM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enero, Febrero ..."
-        android:inputType="text"
         android:textSize="20sp" />
 
     <TextView
@@ -60,7 +58,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/editTextTextCantidad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -76,7 +74,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/editTextPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

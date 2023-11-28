@@ -1,7 +1,7 @@
 package com.example.proyectoecorecicla.models;
 
 public class Usuario {
-private String idusuario;
+private final String idusuario;
     String nombre;
 String apellido;
 int Documento;
@@ -21,9 +21,9 @@ String Password;
         return idusuario;
     }
 
-    public void setIdusuario(String nombre) {
+    /*public void setIdusuario(String nombre) {
         this.idusuario = idusuario;
-    }
+    }*/
     public String getNombre() {
         return nombre;
     }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="opcionesmaterialesresiclaje">
+        <item>Seleccionar</item>
         <item>Vidrio</item>
         <item>Papeles y Carton</item>
         <item>Plasticos</item>

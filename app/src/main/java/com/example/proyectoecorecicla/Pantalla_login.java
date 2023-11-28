@@ -1,6 +1,8 @@
 package com.example.proyectoecorecicla;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -58,18 +60,21 @@ passwor = usu.getPassword();*/
         ArrayList<Usuario> lisUser = lisUsers(fileReader);
         Intent pasarpa = new Intent(getApplicationContext(), Pantallaprincipal.class);
         for (Usuario i:lisUser) {
-            if (usuari.equalsIgnoreCase(i.getEmail())) {
-                if (Password.equals(i.getPassword())) {
-                    Toast.makeText(getApplicationContext(), "Bienvenido ", Toast.LENGTH_LONG).show();
-                    startActivity(pasarpa);
-                } else {
-                    Toast.makeText(getApplicationContext(), "Usuario " + " contraseña incorrecta", Toast.LENGTH_LONG).show();
-                }
-            } else {
+            if (usuari.equalsIgnoreCase(i.getEmail())==false&&Password.equals(i.getPassword())==false){
                 Toast.makeText(getApplicationContext(), "Usuario y contraseña no registrado", Toast.LENGTH_LONG).show();
             }
-        }
+            if (usuari.equalsIgnoreCase(i.getEmail())) {
+                if (Password.equals(i.getPassword())) {
+                    Toast.makeText(getApplicationContext(), "Bienvenido "+i.getNombre(), Toast.LENGTH_LONG).show();
+                    pasarpa.putExtra("idusuario", i.getIdusuario());
+                    startActivity(pasarpa);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Usuario " + i.getNombre() + " contraseña incorrecta", Toast.LENGTH_LONG).show();
 
+                }
+            }
+
+        }
     }
 
     @Override
@@ -99,24 +104,28 @@ passwor = usu.getPassword();*/
                 } else if (editemail1.getText().toString().equals(editemail2.getText().toString())==false) {
                     Toast.makeText(getApplicationContext(), "Los emails  deben ser iguales", Toast.LENGTH_LONG).show();
 
-                    if (editcontra1.getText().toString().equals(editcontra2.getText().toString())) {
 
-                    }
+                }else if (editcontra1.getText().toString().equals(editcontra2.getText().toString())) {
+                    String nombre = edtinom.getText() + "";
+                    String idusuario = generarid(nombre);
+                    int docu = Integer.parseInt(editTextd.getText() + "");
+                    Usuario usu = new Usuario(idusuario, edtinom.getText() + "", edtapellll.getText() + "", docu, editemail1.getText() + "", editcontra1.getText() + "");
+                    almacenarusuario(usu);
+                    Toast.makeText(getApplicationContext(), "Usuario " + usu.getNombre() + " " + "Registrado", Toast.LENGTH_LONG).show();
+                    edtinom.setText(null);
+                    edtapellll.setText(null);
+                    editTextd.setText(null);
+                    editemail1.setText(null);
+                    editemail2.setText(null);
+                    editcontra1.setText(null);
+                    editcontra2.setText(null);
+                    registarg.setVisibility(View.GONE);
+                }else {
+                    Toast.makeText(getApplicationContext(), "Las contraseñas no son iguales", Toast.LENGTH_LONG).show();
+                    editcontra1.setBackgroundColor(Color.RED);
+                    editcontra2.setBackgroundColor(Color.RED);
                 }
-                String nombre = edtinom.getText() + "";
-                String idusuario = generarid(nombre);
-                int docu = Integer.parseInt(editTextd.getText() + "");
-                Usuario usu = new Usuario(idusuario, edtinom.getText() + "", edtapellll.getText() + "", docu, editemail1.getText() + "", editcontra1.getText() + "");
-                almacenarusuario(usu);
-                Toast.makeText(getApplicationContext(), "Usuario " + usu.getNombre() + " " + "Registrado", Toast.LENGTH_LONG).show();
-                edtinom.setText(null);
-                edtapellll.setText(null);
-                editTextd.setText(null);
-                editemail1.setText(null);
-                editemail2.setText(null);
-                editcontra1.setText(null);
-                editcontra2.setText(null);
-                registarg.setVisibility(View.GONE);
+
             }
         });
         cancel.setOnClickListener(new View.OnClickListener() {
