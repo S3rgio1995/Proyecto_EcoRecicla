@@ -230,7 +230,7 @@
 
 
                     <ProgressBar
-                        android:id="@+id/progressBar3"
+                        android:id="@+id/progressBarAluminio"
                         style="@android:style/Widget.ProgressBar.Horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -281,11 +281,11 @@
 
 
                     <ProgressBar
-                        android:id="@+id/progressBar4"
+                        android:id="@+id/progressBarPlastico"
                         style="@android:style/Widget.ProgressBar.Horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:progressTint="#0277BD" />
+                        android:progressTint="#7CC845" />
 
                     <TextView
                         android:id="@+id/ttaoeditplastico"
@@ -305,33 +305,6 @@
         <Space
             android:layout_width="100dp"
             android:layout_height="10dp"></Space>
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardView9"
-            android:layout_width="351dp"
-            android:layout_height="104dp"
-            android:backgroundTint="#34551D"
-            app:cardBackgroundColor="#2E7D32">
-
-            <TextView
-                android:id="@+id/ttaoedit12"
-                android:layout_width="149dp"
-                android:layout_height="29dp"
-                android:layout_gravity="center"
-                android:text="Enero"
-                android:textColor="#F9A825"
-                android:textSize="28sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textViewtotp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center|center_vertical"
-                android:text="Mes donde reciclate màs"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
-
-        </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardView10"
@@ -341,7 +314,7 @@
             app:cardBackgroundColor="#2E7D32">
 
             <TextView
-                android:id="@+id/ttaoedit15"
+                android:id="@+id/matemasrecitext"
                 android:layout_width="149dp"
                 android:layout_height="29dp"
                 android:layout_gravity="center"
@@ -360,13 +333,6 @@
                 android:textSize="20sp" />
 
         </com.google.android.material.card.MaterialCardView>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="352dp"
-            android:layout_height="wrap_content"
-            android:text="Màs informaciòn"
-            android:textSize="24sp" />
 
     </LinearLayout>
 </ScrollView>

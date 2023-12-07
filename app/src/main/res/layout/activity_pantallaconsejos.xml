@@ -22,31 +22,138 @@
         android:textSize="34sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/buttonR"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#009688"
-        android:text="Consejo  1"
-        android:textSize="34sp"
-        app:cornerRadius="0dp" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/buttonR2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00E676"
-        android:text="Consejo 2"
-        android:textSize="34sp"
-        app:cornerRadius="0dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#76FF03"
-        android:text="Consejo 3"
-        android:textSize="34sp"
-        app:cornerRadius="0dp" />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:backgroundTint="#2E7D32"
+                app:cardBackgroundColor="#C5C185">
+
+
+                <LinearLayout
+                    android:layout_width="411dp"
+                    android:layout_height="153dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/texttituloconse1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#009688"
+                        android:text="Consejo  1"
+                        android:textColor="#FF8F00"
+                        android:textSize="34sp"
+                        app:cornerRadius="0dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        app:srcCompat="@drawable/ic_trash" />
+
+                    <TextView
+                        android:id="@+id/Consejo1text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="10dp"></Space>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:backgroundTint="#558B2F"
+                app:cardBackgroundColor="#C5C185">
+
+
+                <LinearLayout
+                    android:layout_width="393dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/texttituloconse2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#AE7E20"
+                        android:gravity="center_horizontal"
+                        android:text="Consejo  2"
+                        android:textColor="#F9A825"
+                        android:textSize="34sp"
+                        app:cornerRadius="0dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        app:srcCompat="@drawable/ic_trash" />
+
+                    <TextView
+                        android:id="@+id/Consejo2text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="10dp"></Space>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:backgroundTint="#9BD374"
+                app:cardBackgroundColor="#C5C185">
+
+
+                <LinearLayout
+                    android:layout_width="393dp"
+                    android:layout_height="139dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/texttituloconse3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#009688"
+                        android:text="Consejo  3"
+                        android:textColor="#FF8F00"
+                        android:textSize="34sp"
+                        app:cornerRadius="0dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        app:srcCompat="@drawable/ic_trash" />
+
+                    <TextView
+                        android:id="@+id/Consejo3text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
