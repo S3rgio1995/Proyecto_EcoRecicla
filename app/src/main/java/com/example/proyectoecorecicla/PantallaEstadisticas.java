@@ -17,7 +17,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class PantallaEstadisticas extends AppCompatActivity {
-
+/*
     TextView totalreciclajetextv, totextvpesorecic,textvviditot;
     ProgressBar progBarVidrio;
 
@@ -78,12 +78,12 @@ public class PantallaEstadisticas extends AppCompatActivity {
         return list;
     }
 
-
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_estadisticas);
-        totextvpesorecic = findViewById(R.id.ttaoedit8);
+       /* totextvpesorecic = findViewById(R.id.ttaoedit8);
         textvviditot = findViewById(R.id.ttaoeditpap);
         progBarVidrio = findViewById(R.id.progressBarVidrio);
 
@@ -96,14 +96,14 @@ public class PantallaEstadisticas extends AppCompatActivity {
             ArrayList<Registroreciclaje> listregis = listregis(fileRead,idf);
             String ite;
             ite = "Vidrio";
-        ArrayList<Registroreciclaje> listregis2 = listregis2(fileRead,idf,ite);
+        ArrayList<Registroreciclaje> listregis2 = listregis2(fileRead,idf,ite);*/
         /*totalreciclajetextv.setText(idf+"");*/
-        totalresiclaje(listregis);
+       /* totalresiclaje(listregis);
         totalpesoresiclaje(listregis);
-        totalresiclajevidrio(listregis2);
+        totalresiclajevidrio(listregis2);*/
 
     }
-    public void totalresiclaje(ArrayList<Registroreciclaje>list){
+  /*  public void totalresiclaje(ArrayList<Registroreciclaje>list){
         int totalv=0;
         int max=0;
         for (Registroreciclaje i: list){
@@ -141,6 +141,6 @@ public class PantallaEstadisticas extends AppCompatActivity {
         progBarVidrio.setMax(totalp);
 
 
-    }
+    }*/
 
 }
