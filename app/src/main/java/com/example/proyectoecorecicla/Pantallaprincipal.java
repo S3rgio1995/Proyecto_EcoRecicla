@@ -41,6 +41,7 @@ public class Pantallaprincipal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent pasarpa3= new Intent(getApplicationContext(), PantallaEstadisticas.class);
+                Toast.makeText(getApplicationContext(), "El usuario es  "+id, Toast.LENGTH_LONG).show();
                 pasarpa3.putExtra("idusuario",id);
                 startActivity(pasarpa3);
 
@@ -50,7 +51,7 @@ public class Pantallaprincipal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent pasarpa4= new Intent(getApplicationContext(), Pantallaregistro.class);
-                Toast.makeText(getApplicationContext(), "El usuario es  "+id, Toast.LENGTH_LONG).show();
+
                 pasarpa4.putExtra("idusuario",id);
                 startActivity(pasarpa4);
 

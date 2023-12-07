@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bthome"
+        android:actionLayout="@layout/activity_pantallaprincipal"
+        android:icon="@drawable/ic_home"
+        android:title="casa"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/btcategorias"
+        android:actionLayout="@layout/activity_pantallacategorias"
+        android:icon="@drawable/ic_conse"
+        android:title="Categoria"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/btconse"
+        android:actionLayout="@layout/activity_pantallaconsejos"
+        android:icon="@drawable/ic_category"
+        android:title="Recomendaciones"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/btestadismen"
+        android:actionLayout="@layout/activity_pantalla_estadisticas"
+        android:icon="@drawable/ic_esta"
+        android:title="Estadisticas"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/btregistro"
+        android:actionLayout="@layout/activity_pantallaregistro"
+        android:icon="@drawable/ic_regism"
+        android:title="Registro"
+        app:showAsAction="ifRoom" />
+</menu>

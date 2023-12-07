@@ -1,240 +1,372 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Widget.DeviceDefault.Light.ScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    tools:context=".PantallaEstadisticas">
+    android:backgroundTint="#AE6969"
+    android:backgroundTintMode="add"
+    android:scrollbarStyle="insideInset"
+    android:theme="@style/Base.Theme.ProyectoEcoRecicla"
+    tools:actionBarNavMode="standard">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="Estadísticas"
-        android:textColor="#00E676"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".PantallaEstadisticas">
 
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="197dp"
-        android:layout_height="51dp"
-        android:progress="60"
-        android:progressTint="#76FF03"
-        android:scrollbars="none"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="Estadísticas"
+            android:textColor="#00E676"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:text="Papel"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2"
-        app:layout_constraintVertical_bias="0.72" />
+        <com.google.android.material.card.MaterialCardView
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Plástico"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
-        app:layout_constraintEnd_toStartOf="@+id/progressBar3"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar3" />
-
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="414dp"
-        android:layout_height="437dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_editor_absoluteX="-2dp">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/holo_green_light">
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="MES"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="ITEM"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="CANTIDAD"
-                android:textAlignment="center" />
+            android:id="@+id/cardView3"
+            android:layout_width="342dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#558B2F"
+            app:cardBackgroundColor="#2E7D32">
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="VALOR"
-                android:textAlignment="center" />
+                android:gravity="center_vertical"
+                android:text="Total Ganado en Reciclaje"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
 
             <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
+                android:id="@+id/Ttaoedittext"
+                android:layout_width="317dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="%"
-                android:textAlignment="center" />
-        </TableRow>
+                android:layout_gravity="center"
+                android:text="500000"
+                android:textColor="#F9A825"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView4"
+            android:layout_width="348dp"
+            android:layout_height="88dp"
+            android:backgroundTint="#9E8024"
+            app:cardBackgroundColor="#2E7D32">
 
             <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
+                android:id="@+id/ttaoedit8"
+                android:layout_width="149dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="500000"
+                android:textColor="#F9A825"
+                android:textSize="29dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewtotpap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical"
+                android:text="Total de Kilos Reciclados"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="10dp"></Space>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="169dp"
+                android:layout_height="109dp"
                 android:layout_weight="1"
+                android:backgroundTint="#9FC6D6"
+                app:cardBackgroundColor="#C5C185">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewtotpap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Vidrio Reciclado"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="DuplicateIds" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBarVidrio"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#558B2F"
+                        android:indeterminateTint="#DC3C3C"
+                        android:max="100"
+                        android:progress="20"
+                        android:progressBackgroundTint="#899C92"
+                        android:progressTint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/ttaoeditpap"
+                        android:layout_width="149dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:text="500000"
+                        android:textColor="#684712"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="0dp"></Space>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewcarton"
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#5A3D23"
+                app:cardBackgroundColor="#2E7D32">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewcarttitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Papel y Carton Reciclado"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="100"
+                        android:progress="30"
+                        android:progressBackgroundTint="#402A2A"
+                        android:progressTint="#FF8F00" />
+
+                    <TextView
+                        android:id="@+id/ttaoeditcart"
+                        android:layout_width="149dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:text="500000"
+                        android:textColor="#F9A825"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="169dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:backgroundTint="#636363"
+                app:cardBackgroundColor="#2E7D32">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewtotalum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Aluminio Reciclado"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar3"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="100"
+                        android:progress="50"
+                        android:progressTint="#C1C0C0" />
+
+                    <TextView
+                        android:id="@+id/ttaoeditalum"
+                        android:layout_width="149dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:text="500000"
+                        android:textColor="#F9A825"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="0dp"></Space>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewplastico"
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#2F8B7D"
+                app:cardBackgroundColor="#2E7D32"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewplastico"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Plastico Reciclado"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar4"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progressTint="#0277BD" />
+
+                    <TextView
+                        android:id="@+id/ttaoeditplastico"
+                        android:layout_width="149dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:text="500000"
+                        android:textColor="#F9A825"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="10dp"></Space>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView9"
+            android:layout_width="351dp"
+            android:layout_height="104dp"
+            android:backgroundTint="#34551D"
+            app:cardBackgroundColor="#2E7D32">
+
+            <TextView
+                android:id="@+id/ttaoedit12"
+                android:layout_width="149dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
                 android:text="Enero"
-                android:textAlignment="center" />
+                android:textColor="#F9A825"
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
+                android:id="@+id/textViewtotp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Papel"
-                android:textAlignment="center" />
+                android:gravity="center|center_vertical"
+                android:text="Mes donde reciclate màs"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView10"
+            android:layout_width="351dp"
+            android:layout_height="104dp"
+            android:backgroundTint="#00838F"
+            app:cardBackgroundColor="#2E7D32">
 
             <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="30 KG"
-                android:textAlignment="center" />
+                android:id="@+id/ttaoedit15"
+                android:layout_width="149dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
+                android:text="500000"
+                android:textColor="#F9A825"
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView17"
-                android:layout_width="wrap_content"
+                android:id="@+id/textViewtotp1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="30.000"
-                android:textAlignment="center" />
+                android:gravity="center|center_vertical"
+                android:text="Material que màs has reciclado."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="60"
-                android:textAlignment="center" />
-        </TableRow>
+        </com.google.android.material.card.MaterialCardView>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:text="Màs informaciòn"
+            android:textSize="24sp" />
 
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Enero"
-                android:textAlignment="center" />-
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Plástico"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/textView21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="20 KG"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="15.000"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="40"
-                android:textAlignment="center" />
-        </TableRow>
-
-    </TableLayout>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Actualizar"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <ProgressBar
-        android:id="@+id/progressBar3"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="197dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="32dp"
-        android:progress="40"
-        android:progressTint="#76FF03"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="left"
-        app:constraint_referenced_ids="progressBar2,textView4,textView5,textView3,progressBar3,button3,tableLayout" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

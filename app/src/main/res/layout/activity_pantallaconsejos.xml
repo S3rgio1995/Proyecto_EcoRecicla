@@ -48,4 +48,5 @@
         android:text="Consejo 3"
         android:textSize="34sp"
         app:cornerRadius="0dp" />
+
 </LinearLayout>

@@ -59,21 +59,23 @@ passwor = usu.getPassword();*/
         File fileReader = new File(getFilesDir(),"usuari.txt");
         ArrayList<Usuario> lisUser = lisUsers(fileReader);
         Intent pasarpa = new Intent(getApplicationContext(), Pantallaprincipal.class);
+        boolean n = false;
         for (Usuario i:lisUser) {
             if (usuari.equalsIgnoreCase(i.getEmail())) {
                 if (Password.equals(i.getPassword())) {
                     Toast.makeText(getApplicationContext(), "Bienvenido "+i.getNombre(), Toast.LENGTH_LONG).show();
                     pasarpa.putExtra("idusuario", i.getIdusuario());
                     startActivity(pasarpa);
+                    n=true;
+                    break;
                 } else {
                     Toast.makeText(getApplicationContext(), "Usuario " + i.getNombre() + " contraseña incorrecta", Toast.LENGTH_LONG).show();
-
+break;
                 }
-            }else {
-                Toast.makeText(getApplicationContext(), "Usuario y contraseña no registrado", Toast.LENGTH_LONG).show();
             }
 
         }
+        if(n==false){ Toast.makeText(getApplicationContext(), "Usuario y contraseña no registrado", Toast.LENGTH_LONG).show();}
     }
 
     @Override
