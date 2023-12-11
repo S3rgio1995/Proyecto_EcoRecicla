@@ -22,6 +22,6 @@ public class Pantallaconsejos extends AppCompatActivity {
         con3.setTextSize(22);
         con1.setText("Deposita los residuos en el contenedor correspondiente");
         con2.setText("Limpia los envases de comida antes de tirarlos al contenedor");
-        con3.setText("Utiliza papel resiclado");
+        con3.setText("Utiliza papel reciclado");
     }
 }
